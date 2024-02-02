@@ -41,7 +41,7 @@ final class ViewController: UIViewController {
             red: CGFloat(redColorSlider.value),
             green: CGFloat(greenColorSlider.value),
             blue: CGFloat(blueColorSlider.value),
-            alpha: 0.9)
+            alpha: 1.0)
     }
 }
 
