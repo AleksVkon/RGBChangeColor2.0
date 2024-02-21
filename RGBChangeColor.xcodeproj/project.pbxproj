@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0CBAC2FA2B6CC45300F5B5F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAC2F92B6CC45300F5B5F6 /* AppDelegate.swift */; };
 		0CBAC2FC2B6CC45300F5B5F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAC2FB2B6CC45300F5B5F6 /* SceneDelegate.swift */; };
-		0CBAC2FE2B6CC45300F5B5F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAC2FD2B6CC45300F5B5F6 /* ViewController.swift */; };
+		0CBAC2FE2B6CC45300F5B5F6 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAC2FD2B6CC45300F5B5F6 /* SliderViewController.swift */; };
 		0CBAC3012B6CC45300F5B5F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBAC2FF2B6CC45300F5B5F6 /* Main.storyboard */; };
 		0CBAC3032B6CC45400F5B5F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBAC3022B6CC45400F5B5F6 /* Assets.xcassets */; };
 		0CBAC3062B6CC45400F5B5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBAC3042B6CC45400F5B5F6 /* LaunchScreen.storyboard */; };
+		0CCC9AB52B84C1E70068639A /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC9AB42B84C1E70068639A /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CBAC2F62B6CC45300F5B5F6 /* RGBChangeColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBChangeColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBAC2F92B6CC45300F5B5F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CBAC2FB2B6CC45300F5B5F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0CBAC2FD2B6CC45300F5B5F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CBAC2FD2B6CC45300F5B5F6 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		0CBAC3002B6CC45300F5B5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CBAC3022B6CC45400F5B5F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CBAC3052B6CC45400F5B5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CBAC3072B6CC45400F5B5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CCC9AB42B84C1E70068639A /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		0CBAC2F82B6CC45300F5B5F6 /* RGBChangeColor */ = {
 			isa = PBXGroup;
 			children = (
-				0CBAC2F92B6CC45300F5B5F6 /* AppDelegate.swift */,
-				0CBAC2FB2B6CC45300F5B5F6 /* SceneDelegate.swift */,
-				0CBAC2FD2B6CC45300F5B5F6 /* ViewController.swift */,
-				0CBAC2FF2B6CC45300F5B5F6 /* Main.storyboard */,
+				0CCC9AB22B84BD0C0068639A /* ViewControllers */,
+				0CCC9AB32B84BDA10068639A /* Stroyboards */,
+				0CCC9AB12B84BCFD0068639A /* App */,
 				0CBAC3022B6CC45400F5B5F6 /* Assets.xcassets */,
-				0CBAC3042B6CC45400F5B5F6 /* LaunchScreen.storyboard */,
-				0CBAC3072B6CC45400F5B5F6 /* Info.plist */,
 			);
 			path = RGBChangeColor;
+			sourceTree = "<group>";
+		};
+		0CCC9AB12B84BCFD0068639A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0CBAC2F92B6CC45300F5B5F6 /* AppDelegate.swift */,
+				0CBAC2FB2B6CC45300F5B5F6 /* SceneDelegate.swift */,
+				0CBAC3072B6CC45400F5B5F6 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0CCC9AB22B84BD0C0068639A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CBAC2FD2B6CC45300F5B5F6 /* SliderViewController.swift */,
+				0CCC9AB42B84C1E70068639A /* ColorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0CCC9AB32B84BDA10068639A /* Stroyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0CBAC2FF2B6CC45300F5B5F6 /* Main.storyboard */,
+				0CBAC3042B6CC45400F5B5F6 /* LaunchScreen.storyboard */,
+			);
+			path = Stroyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CBAC2FE2B6CC45300F5B5F6 /* ViewController.swift in Sources */,
+				0CBAC2FE2B6CC45300F5B5F6 /* SliderViewController.swift in Sources */,
 				0CBAC2FA2B6CC45300F5B5F6 /* AppDelegate.swift in Sources */,
+				0CCC9AB52B84C1E70068639A /* ColorViewController.swift in Sources */,
 				0CBAC2FC2B6CC45300F5B5F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +322,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 892G7XT22J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RGBChangeColor/Info.plist;
+				INFOPLIST_FILE = RGBChangeColor/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,7 +354,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 892G7XT22J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RGBChangeColor/Info.plist;
+				INFOPLIST_FILE = RGBChangeColor/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
