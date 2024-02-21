@@ -15,13 +15,12 @@ final class ColorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.cyan
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let sliderVC = segue.destination as? SliderViewController
-        sliderVC?.currentColor = view.backgroundColor!
+        sliderVC?.currentColor = view.backgroundColor ?? UIColor.black
         sliderVC?.delegate = self
     }
 }

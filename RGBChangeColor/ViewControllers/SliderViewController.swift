@@ -19,10 +19,10 @@ final class SliderViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
-    var red: CGFloat = 0
-    var green: CGFloat = 0
-    var blue: CGFloat = 0
-    var alpha: CGFloat = 0
+    private var red: CGFloat = 0
+    private var green: CGFloat = 0
+    private var blue: CGFloat = 0
+    private var alpha: CGFloat = 0
     var currentColor: UIColor = UIColor.green
     
     weak var delegate: SliderViewControllerDelegate? 
@@ -64,7 +64,6 @@ final class SliderViewController: UIViewController {
             blue: blueSlider.value.cgFloat(),
             alpha: 1
         )
-        currentColor = colorFieldView.backgroundColor!
     }
     
     @IBAction func DoneButtonAction(_ sender: Any) {
